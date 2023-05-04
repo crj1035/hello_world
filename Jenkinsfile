@@ -1,13 +1,13 @@
 pipeline {
-    agent { label 'linux' }
+    agent any
     tools {
-        maven 'V3.9.1'
+        maven 'Maven'
     }
     stages {
         stage('Checkout')
         {
             steps {
-                git branch: 'main', credentialsId: '08239c21-315b-4576-b6ab-caa2d7325a02', url: 'git@github.com:aqw42/hello_world'
+                git branch: 'main', credentialsId: '42f6b13b-df92-4250-b8f4-6815cc6cbc57', url: 'git@github.com:crj1035/hello_world'
             }
         }
         stage('Generate')
