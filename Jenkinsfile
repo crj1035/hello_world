@@ -7,6 +7,7 @@ pipeline {
         stage('Checkout')
         {
             steps {
+                // modifications des credentials et du git
                 git branch: 'main', credentialsId: '42f6b13b-df92-4250-b8f4-6815cc6cbc57', url: 'git@github.com:crj1035/hello_world'
             }
         }
