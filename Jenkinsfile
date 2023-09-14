@@ -8,7 +8,7 @@ pipeline {
         {
             steps {
                 // modifications des credentials et du git
-                git branch: 'main', credentialsId: '00759f27-a2d5-474d-92d6-ffe34bd19922', url: 'git@github.com:crj1035/hello_world'
+                git branch: 'mainf', credentialsId: '00759f27-a2d5-474d-92d6-ffe34bd19922', url: 'git@github.com:crj1035/hello_world.git'
             }
         }
         stage('Generate')
