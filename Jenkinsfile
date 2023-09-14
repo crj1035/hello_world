@@ -4,15 +4,13 @@ pipeline {
         maven 'maven 3.9.4'
     }
     stages {
-        /*
         stage('Checkout')
         {
             steps {
                 // modifications des credentials et du git
-                git branch: 'mainf', credentialsId: '00759f27-a2d5-474d-92d6-ffe34bd19922', url: 'git@github.com:crj1035/hello_world.git'
+                git branch: 'mainf', credentialsId: '558f2284-0ee7-44db-bfa7-68d8b433370e', url: 'git@github.com:crj1035/hello_world.git'
             }
         }
-        */
         stage('Generate')
         {
             steps {
