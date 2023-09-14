@@ -4,6 +4,7 @@ pipeline {
         maven 'maven 3.9.4'
     }
     stages {
+        /*
         stage('Checkout')
         {
             steps {
@@ -11,6 +12,7 @@ pipeline {
                 git branch: 'mainf', credentialsId: '00759f27-a2d5-474d-92d6-ffe34bd19922', url: 'git@github.com:crj1035/hello_world.git'
             }
         }
+        */
         stage('Generate')
         {
             steps {
